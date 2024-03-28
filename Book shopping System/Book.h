@@ -1,30 +1,26 @@
 #pragma once
-#include<map>
+
+#include <string>
 using namespace std;
-class Book
-{
-	int book_id;
-	string book_name;
-	map<int, string> book_list;
+class Book {
+private:
+    int book_id;
+   string book_name;
 
 public:
-	Book();
-	Book(int id, string name) : book_id(id), book_name(name) {
-		book_list[book_id] = book_name;
-	}
-	void showlist() {
-		map<int, string>::iterator it;
-		for (it = book_list.begin(); it != book_list.end(); it++) {
-			cout << it->first << " " << it->second << endl;
-		}
+    Book(int id, const string& name) : book_id(id), book_name(name) {}
 
-		cout << endl;
-	}
-	
+
+
+
+    int getBookId() const { return book_id; }
+
+
+
+    const string& getBookName() const { return book_name; }
 
 
 
 
 
 };
-

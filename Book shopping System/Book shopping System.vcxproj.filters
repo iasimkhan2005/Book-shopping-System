@@ -23,8 +23,10 @@
     <ClInclude Include="Book.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ShoppingCart.h">
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="ShoppingCart.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
+    </CustomBuild>
   </ItemGroup>
 </Project>
